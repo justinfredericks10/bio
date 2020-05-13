@@ -4,6 +4,7 @@ body {
   background-repeat: repeat;
   background-size: auto;
   margin: auto;
+  font-family: "Montserrat";
 }
 
 .nav {
@@ -19,6 +20,7 @@ body {
   margin: auto;
   display: flex;
   justify-content: center;
+font-size: 12px;
 }
 
 /* Hover effect */
@@ -27,8 +29,6 @@ body {
   position: relative;
   display: block;
   color: black;
-  /* font-size: 20px;
-  font-weight: bold; */
   text-align: center;
   text-decoration: none;
   margin: -10px 10px;
@@ -42,7 +42,6 @@ body {
 
 .btn5::before {
   background: white;
-  /* background-image: linear-gradient(black, white); */
   content: "";
   position: absolute;
   top: 50%;
@@ -66,7 +65,7 @@ body {
   position: relative;
   display: block;
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -80,9 +79,7 @@ body {
 }
 
 .btn::before {
-  /* background:#73AD21; */
   background: white;
-  /* background-image: linear-gradient(black, white); */
   content: "";
   position: absolute;
   top: 50%;
@@ -135,6 +132,7 @@ body {
 }
 
 .main {
+  font-size: 13px;
   border-radius: 50px 15px 15px 50px;
   box-shadow: 5px 5px #331a00;
   background-image: linear-gradient(#73AD21, white);
@@ -164,6 +162,7 @@ h2 {
 .side {
   display: flex;
   flex-direction: column;
+  font-size: 13px;
 }
 
 .side1 {
@@ -190,15 +189,12 @@ h2 {
 /* Content Info page */
 .info{
   opacity: 0.9;
-  /* background: url(images/sc.png); */
-  /* background-size: 700px 630px;
-  background-repeat: no-repeat; */
+  font-size: 18px;
 }
 .container1{
   border-radius: 50px 50px 50px 50px;
   box-shadow: 5px 5px #331a00;
   background-image: linear-gradient(#73AD21, white);
-  /* opacity: 0.9; */
   padding: 10px;
   width: 660px;
   height: 700px;
@@ -208,13 +204,23 @@ h2 {
   font-size: 20px;
   justify-content: center;
 }
-/* effect hard to read */
-/* ul:hover{
-  text-shadow: 2px 2px #669900;
-  font-weight: bold;
-} */
 .notes{
   text-align: center;
+}
+ul {
+  list-style: none;
+}
+ul li:before {
+  content:"\2022";
+  margin-right: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+ul li:hover {
+  color: red;
+}
+ul li:hover:before {
+  color: red;
 }
 /* Social Media Buttons */
 .btm {
@@ -292,10 +298,11 @@ h2 {
     width: auto;
     height: 230px;
   }
+}
 @media screen and (max-width:660px) {
   .container1 {
     width: auto;
-    height: 1000px;
+    height: 1030px;
   }
 }
 @media screen and (max-width:660px) {
@@ -303,3 +310,50 @@ h2 {
     font-size: 1em;
   }
 }
+/*Content Hobbies Page */
+.bd {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 900px;
+  height: 750px;
+  border-radius: 50px;
+    box-shadow: 5px 5px #331a00;
+    background-image: linear-gradient(#73AD21, white);
+    opacity: 0.9;
+    padding: 0px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.b {
+  background-color: #f1f1f1;
+  margin: 25px;
+  padding: 0px;
+  font-size: 30px;
+  border-radius: 40px;
+  width: 200px;
+  height: 200px;
+}
+.scfit
+{
+  max-width: 100%;
+  max-height: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+/* media query's */
+@media screen and (min-width:500px)
+{
+  .bd{
+    width: 680px;
+}
+}
+@media screen and (max-width:660px)
+{
+ .bd{
+width: auto;
+height: 1500px
+ }
+ }
